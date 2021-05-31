@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Model Company="European System Technologies" xmlns="http://schemas.est.by/objectmodel/root/2010">
+  <ObjectModel>
+    <Namespace Name="Sys.Services.Drv" >
+      
+      <Class Name="TLM3SharedSetting" Area="Public">
+	      
+        <Property Type="Boolean" Name="EnblTimeCorr" Default="true" CodeSummary="Включить корректировку времени"/>
+        <Property Type="Boolean" Name="EnblEvents" CodeSummary="Включить опрос событий" Default="false"/>
+        <Property Type="Boolean" Name="EnblIm" CodeSummary="Включить опрос мгновенных значений" Default="false" />
+		<Property Type="Boolean" Name="EnblHr" CodeSummary="Включить опрос часовых" Default="false" />
+		<Property Type="Boolean" Name="EnblDay" CodeSummary="Включить опрос суточных" Default="false" />
+		<Property Type="Boolean" Name="EnblMon" CodeSummary="Включить опрос месячных" Default="false" />
+        <Property Type="ScheduleDbWrap" Name="Arch" CodeSummary="Рассписание синхронизации архивных данных"/>
+        <Property Type="ScheduleDbWrap" Name="Im" CodeSummary="Рассписание чтения мгновенных значений"/>
+      </Class>
+
+      <Class Name="TLM3ContentSetting" Area="Public">
+        <Property Type="Int32" Name="Address" CodeSummary="Адресс прибора в сети"/>        
+      </Class>
+
+      <Class Name="TLM3SynchState" Area="Internal" >
+        <Property Type="String" Name="SerialNumber" />
+      </Class>
+    </Namespace>
+  </ObjectModel>
+</Model>
