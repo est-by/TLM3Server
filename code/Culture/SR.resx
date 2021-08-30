@@ -117,4 +117,58 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="CRC" xml:space="preserve">
+    <value>Bad CRC value</value>
+  </data>
+  <data name="Test_DateIssue" xml:space="preserve">
+    <value>Test request processing device issue date</value>
+  </data>
+  <data name="Test_DT" xml:space="preserve">
+    <value>Test datetime starting.</value>
+  </data>
+  <data name="Test_NetNum" xml:space="preserve">
+    <value>Test request processing network number</value>
+  </data>
+  <data name="Test_SN" xml:space="preserve">
+    <value>Test request processing serial</value>
+  </data>
+  <data name="Test_SV" xml:space="preserve">
+    <value>Test request processing soft version</value>
+  </data>
+  <data name="Test_Type" xml:space="preserve">
+    <value>Test request processing device type</value>
+  </data>
+  <data name="ReadHoles" xml:space="preserve">
+    <value>Read holes is processing</value>
+  </data>
+  <data name="Err_Machine" xml:space="preserve">
+    <value>Machine misfunction</value>
+  </data>
+  <data name="Result_Empty" xml:space="preserve">
+    <value>No data</value>
+  </data>
+  <data name="Read30Min" xml:space="preserve">
+    <value>Read 30 min holes</value>
+  </data>
+  <data name="ReadDay" xml:space="preserve">
+    <value>Read day holes</value>
+  </data>
+  <data name="ReadMonth" xml:space="preserve">
+    <value>Read month/year holes</value>
+  </data>
+  <data name="Jrn_Change_Settings" xml:space="preserve">
+    <value>Изменение настроек</value>
+  </data>
+  <data name="Jrn_Change_Time" xml:space="preserve">
+    <value>Синхронизация времени</value>
+  </data>
+  <data name="Jrn_Phase_Appear" xml:space="preserve">
+    <value>Появление фаз</value>
+  </data>
+  <data name="Jrn_Phase_Disappear" xml:space="preserve">
+    <value>Пропадание фаз</value>
+  </data>
+  <data name="Jrn_Unknown" xml:space="preserve">
+    <value>Неизвестное событие</value>
+  </data>
 </root>

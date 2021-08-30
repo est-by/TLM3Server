@@ -10,7 +10,7 @@
         <Property Type="Boolean" Name="EnblIm" CodeSummary="Включить опрос мгновенных значений" Default="false" />
 		<Property Type="Boolean" Name="EnblHr" CodeSummary="Включить опрос часовых" Default="false" />
 		<Property Type="Boolean" Name="EnblDay" CodeSummary="Включить опрос суточных" Default="false" />
-		<Property Type="Boolean" Name="EnblMon" CodeSummary="Включить опрос месячных" Default="false" />
+		<Property Type="Boolean" Name="EnblMonth" CodeSummary="Включить опрос месячных" Default="false" />
         <Property Type="ScheduleDbWrap" Name="Arch" CodeSummary="Рассписание синхронизации архивных данных"/>
         <Property Type="ScheduleDbWrap" Name="Im" CodeSummary="Рассписание чтения мгновенных значений"/>
       </Class>

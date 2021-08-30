@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Library Description="Библиотека драйвера Энергомера CE-101" Guid="est.by:TLMLibrary"
+<Library Description="Библиотека драйвера TLM-302" Guid="est.by:TLMLibrary"
          MajorVersion="1" MinorVersion="1" xmlns="http://schemas.est.by/library/root/2010"
          OutputPath="..\..\..\..\..\..\..\bin">
 
@@ -9,7 +9,7 @@
     <RegComponentImpls>
       <RegComponentImpl 
         RefTypeIdDesc="Sys.Types.Components.DriverElectroClient" 
-        TypeIdImpl="Sys.Services.Drv.TLM3.TLMDriver" 
+        TypeIdImpl="Sys.Services.Drv.TLM3.TLM3Driver" 
         Guid="est.by:Bus.TLM3DrvClientImpl" />
     </RegComponentImpls>
   </FileDll>

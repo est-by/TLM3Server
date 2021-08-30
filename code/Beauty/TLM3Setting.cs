@@ -43,7 +43,7 @@ namespace Sys.Services.Drv {
         /// <summary>
         /// Поле для свойства Включить опрос месячных
         /// </summary>
-        private bool _enblmonth = false;
+        private bool _enblmon = false;
         
         /// <summary>
         /// Поле для свойства Рассписание синхронизации архивных данных
@@ -58,13 +58,13 @@ namespace Sys.Services.Drv {
         /// <summary>
         /// Интернал конструктор
         /// </summary>
-        internal TLM3SharedSetting(bool enblTimeCorr, bool enblEvents, bool enblIm, bool enblHr, bool enblDay, bool enblMonth, Sys.Types.Components.ScheduleDbWrap arch, Sys.Types.Components.ScheduleDbWrap im) {
+        internal TLM3SharedSetting(bool enblTimeCorr, bool enblEvents, bool enblIm, bool enblHr, bool enblDay, bool enblMon, Sys.Types.Components.ScheduleDbWrap arch, Sys.Types.Components.ScheduleDbWrap im) {
             this.EnblTimeCorr = enblTimeCorr;
             this.EnblEvents = enblEvents;
             this.EnblIm = enblIm;
             this.EnblHr = enblHr;
             this.EnblDay = enblDay;
-            this.EnblMonth = enblMonth;
+            this.EnblMon = enblMon;
             this.Arch = arch;
             this.Im = im;
         }
@@ -138,13 +138,12 @@ namespace Sys.Services.Drv {
         /// <summary>
         /// Свойство Включить опрос месячных
         /// </summary>
-        public virtual bool EnblMonth
-        {
+        public virtual bool EnblMon {
             get {
-                return _enblmonth;
+                return _enblmon;
             }
             set {
-                this._enblmonth = value;
+                this._enblmon = value;
             }
         }
         
@@ -183,7 +182,7 @@ namespace Sys.Services.Drv {
             value.WriteBoolean("EnblIm", this.EnblIm, false);
             value.WriteBoolean("EnblHr", this.EnblHr, false);
             value.WriteBoolean("EnblDay", this.EnblDay, false);
-            value.WriteBoolean("EnblMonth", this.EnblMonth, false);
+            value.WriteBoolean("EnblMon", this.EnblMon, false);
             value.WriteEncodeable<Sys.Types.Components.ScheduleDbWrap>("Arch", this.Arch);
             value.WriteEncodeable<Sys.Types.Components.ScheduleDbWrap>("Im", this.Im);
             value.PopNamespace();
@@ -208,7 +207,7 @@ namespace Sys.Services.Drv {
             this.EnblIm = value.ReadBoolean("EnblIm", false);
             this.EnblHr = value.ReadBoolean("EnblHr", false);
             this.EnblDay = value.ReadBoolean("EnblDay", false);
-            this.EnblMonth = value.ReadBoolean("EnblMonth", false);
+            this.EnblMon = value.ReadBoolean("EnblMon", false);
             this.Arch = value.ReadEncodeableClass<Sys.Types.Components.ScheduleDbWrap>("Arch", this.TLM3SharedSetting_CreateSys_Types_Components_ScheduleDbWrap);
             this.Im = value.ReadEncodeableClass<Sys.Types.Components.ScheduleDbWrap>("Im", this.TLM3SharedSetting_CreateSys_Types_Components_ScheduleDbWrap);
             value.PopNamespace();
